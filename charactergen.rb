@@ -210,11 +210,31 @@ def hitpoints(job,conbonus)
   elsif job == 'warlock'
     hp = 8 + conbonus
     @gold = 4.times.map { rand(1..4) * 10 }
-  else job == 'wizard'
+  else
     hp = 6 + conbonus
     @gold = 4.times.map { rand(1..4) * 10 }
   end
   hp
+end
+
+def backgroundstuff(bg)
+  if bg == 'folk hero'
+    @gold.push(10)
+  elsif bg == 'hermit'
+    @gold.push(5)
+  elsif bg == 'noble'
+    @gold.push(25)
+  elsif bg == 'outlander'
+    @gold.push(10)
+  elsif bg == 'sage'
+    @gold.push(10)
+  elsif bg == 'soldier'
+    @gold.push(10)
+  elsif bg == 'urchin'
+    @gold.push(10)
+  else
+    @gold.push(15)
+  end
 end
 
 puts "What is your name?"
@@ -272,6 +292,7 @@ armorclass = 10 + dexbonus
 passivewisdom = 10 + perception
 
 plr_hit = hitpoints(plr_class,conbonus)
+backgroundstuff(plr_background)
 
 puts "Name: #{name.split.map(&:capitalize).join(' ')}"
 puts "Race: #{plr_race.capitalize}"
