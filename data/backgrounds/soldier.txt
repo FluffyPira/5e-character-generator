@@ -1,0 +1,19 @@
+Skill Proficiencies: Athletics, Intimidation 
+Tool Proficiencies: One type of gaming set, vehicles (land)
+Equipment: An insignia of rank, a trophy taken from a fallen enemy (a dagger, broken blade, or piece of a banner), a set of bone dice or deck o f cards, a set of common clothes, and a belt pouch containing 10 gp
+
+Speciality
+During your time as a soldier, you had a specific role to play in your unit or army. Roll a d8 or choose from the options in the table below to determine your role:
+
+Speciality (roll a d8)
+1 Officer
+2 Scout 
+3 Infantry 
+4 Cavalry
+5 Healer
+6 Quartermaster
+7 Standard bearer
+8 Support staff (cook, blacksmith, or the like.)
+
+Feature: Military Rank
+You have a military rank from your career as a soldier. Soldiers loyal to your form er military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized.

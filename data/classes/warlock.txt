@@ -1,0 +1,42 @@
+Hit Points:
+Hit Dice: 1d8 per warlock level
+Hit Points at 1st Level: 8 + your Constitution modifier 
+Hit Points at Higher Levels: 1d8 (or 5) + your Constitution modifier per warlock level after 1st
+
+Proficiencies
+Armor: Lightarmor 
+Weapons: Simple weapons 
+Tools: None
+Saving Throws: Wisdom , Charisma 
+Skills: Choose two skills from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion
+
+Equipment
+You start with the following equipment, in addition to the equipment granted by your background:
+• (a) a light crossbow and 20 bolts or (b) any simple weapon
+• (a) a com ponent pouch or (b) an arcane focus
+• (a) a scholar’s pack or (b) a dungeoneer’s pack
+• Leather armor, any simple weapon, and two daggers
+
+Otherworldly Patron
+At 1st level, you have struck a bargain with an otherworldly being of your choice: the Archfey, the Fiend, or the Great Old One, each of which is detailed at the end of the class description. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.
+
+Pact Magic
+Your arcane research and the magic bestowed on you by your patron have given you facility with spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the warlock spell list.
+
+Cantrips
+You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as show n in the Cantrips Known column of the Warlock table.
+
+Spell Slots
+The Warlock table shows how many spell slots you have. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest. For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell thunderwave, you must spend one of those slots, and you cast it as a 3rd-level spell.
+
+Spells known of first level or higher
+At 1st level, you know two 1st-level spells of your choice from the warlock spell list. The Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what’s show n in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level. Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots.
+
+Spellcasting Ability
+Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and w hen making an attack roll with one.
+
+Spell save DC = 8 + your proficiency bonus + your Charisma modifier
+Spell attack modifier = your proficiency bonus + your Charisma modifier
+
+Spellcasting Focus
+You can use an arcane focus (found in chapter 5) as a spellcasting focus for your warlock spells.

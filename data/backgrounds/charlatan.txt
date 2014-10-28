@@ -1,0 +1,18 @@
+Skill Proficiencies: Deception, Sleight of Hand 
+Tool Proficiencies: Disguise kit, forgery kit 
+Equipment: A set of fine clothes, a disguise kit, tools of the con of your choice (ten stoppered bottles filled with colored liquid, a set o f weighted dice, a deck of marked cards, or a signet ring of an imaginary duke), and a belt pouch containing 15 gp
+
+Favorite Scheme
+Every charlatan has an angle he or she uses in preference to other schemes. Choose a favorite scam or roll on the table below.
+
+Scam (roll a d6)
+1 I cheat at games of chance.
+2 I shave coins or forge documents.
+3 I insinuate myself into people’s lives to prey on their weakness and secure their fortunes.
+4 I put on new identities like clothes.
+5 I run sleight-of-hand cons on street corners.
+6 I convince people that worthless junk is worth their hard-earned money.
+
+Feature: False Identity
+You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona. 
+Additionally, you can forge documents including official papers and personal letters, as long as you have seen an example of the kind of document or the handwriting you are trying to copy.

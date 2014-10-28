@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 RACES = ['dwarf', 'elf', 'halfling', 'human', 'dragonborn', 'gnome', 'half-elf', 'half-orc', 'tiefling']
 CLASSES = ['barbarian', 'bard', 'cleric', 'druid', 'fighter', 'monk', 'paladin', 'ranger', 'rogue', 'sorcerer', 'warlock', 'wizard']
-BACKGROUND = ['acolyte', 'charlatan', 'criminal', 'entertainer', 'folk hero', 'guild artisan', 'hermit', 'noble', 'outlander', 'sage', 'sailor', 'soldier', 'urchin']
+BACKGROUND = ['acolyte', 'charlatan', 'criminal', 'entertainer', 'folk-hero', 'guild-artisan', 'hermit', 'noble', 'outlander', 'sage', 'sailor', 'soldier', 'urchin']
 
 @strength = nil
 @dexterity = nil
@@ -121,10 +121,7 @@ def raceability(race)
   elsif race == 'half-elf'
     @charisma += 2
     halfelfloop
-    
     @speed = 30
-    
-
   elsif race == 'half-orc'
     @strength += 2
     @constitution +=1
@@ -218,7 +215,7 @@ def hitpoints(job,conbonus)
 end
 
 def backgroundstuff(bg)
-  if bg == 'folk hero'
+  if bg == 'folk-hero'
     @gold.push(10)
   elsif bg == 'hermit'
     @gold.push(5)
@@ -295,6 +292,9 @@ plr_hit = hitpoints(plr_class,conbonus)
 backgroundstuff(plr_background)
 
 race_feat = File.read("data/races/#{plr_race}.txt")
+class_feat = File.read("data/classes/#{plr_class}.txt")
+background_feat = File.read("data/backgrounds/#{plr_background}.txt")
+
 
 output = File.new("characters/#{name.split.map(&:capitalize).join(' ')}-#{plr_class.capitalize}.txt", "w")
 output.write("Name: #{name.split.map(&:capitalize).join(' ')}
@@ -304,6 +304,7 @@ Background: #{plr_background.capitalize}
 
 -------------------
 Stats:
+-------------------
 Strength: #{@strength}, Dexterity: #{@dexterity}, Constitution: #{@constitution}, Intelligence: #{@intelligence}, Wisdom: #{@wisdom}, Charisma: #{@charisma}.
 Stat Bonuses:
 STR: #{strbonus}, DEX: #{dexbonus}, CON: #{conbonus}, INT: #{intbonus}, WIS: #{wisbonus}, CHA: #{chabonus}
@@ -317,6 +318,7 @@ Starting gold: #{@gold.reduce(:+)}
 
 -------------------
 Skill Bonuses:
+-------------------
 Acrobatics: #{acrobatics} 
 Animal Handling: #{animalhandling}
 Arcana #{arcana}
@@ -338,8 +340,16 @@ Survival: #{survival}
 
 -------------------
 Racial Features:
+-------------------
 #{race_feat}
 
 -------------------
-Class Features:")
+Class Features:
+-------------------
+#{class_feat}
+
+-------------------
+Background Features:
+-------------------
+#{background_feat}")
 puts "Output saved to: characters/#{name.split.map(&:capitalize).join(' ')}-#{plr_class.capitalize}.txt"
