@@ -126,7 +126,7 @@ def raceability(race)
     
 
   elsif race == 'half-orc'
-    stength += 2
+    @strength += 2
     @constitution +=1
     @speed = 30
   else
@@ -294,22 +294,52 @@ passivewisdom = 10 + perception
 plr_hit = hitpoints(plr_class,conbonus)
 backgroundstuff(plr_background)
 
-puts "Name: #{name.split.map(&:capitalize).join(' ')}"
-puts "Race: #{plr_race.capitalize}"
-puts "Class: #{plr_class.capitalize}"
-puts "Background: #{plr_background.capitalize}"
-puts "-------------------"
-puts "Stats:"
-puts "Strength: #{@strength}, Dexterity: #{@dexterity}, Constitution: #{@constitution}, Intelligence: #{@intelligence}, Wisdom: #{@wisdom}, Charisma: #{@charisma}."
-puts "Stat Bonuses:"
-puts "STR: #{strbonus}, DEX: #{dexbonus}, CON: #{conbonus}, INT: #{intbonus}, WIS: #{wisbonus}, CHA: #{chabonus}"
-puts "Hit ponts: #{plr_hit}"
-puts "Base Speed: #{@speed}"
-puts "AC: #{armorclass}"
-puts "Passive Wisdom: #{passivewisdom}"
-puts "Melee Bonus: #{meleebonus}"
-puts "Ranged Bonus: #{rangedbonus}"
-puts "Starting gold: #{@gold.reduce(:+)}"
-puts "-------------------"
-puts "Skill Bonuses:"
-puts "Acrobatics: #{acrobatics}, Animal Handling: #{animalhandling}, Arcana #{arcana}, Athletics: #{athletics}, Deception: #{deception}, History: #{history}, Insight: #{insight}, Intimidation #{intimidation}, Investigation #{investigation}, Medicine: #{medicine}, Nature: #{nature}, Perception: #{perception}, Performance: #{performance}, Persuasion: #{persuasion}, Religion: #{religion}, Sleight of Hand: #{sleightofhand}, Stealth: #{stealth}, Survival: #{survival}"
+race_feat = File.read("data/races/#{plr_race}.txt")
+
+output = File.new("characters/#{name.split.map(&:capitalize).join(' ')}-#{plr_class.capitalize}.txt", "w")
+output.write("Name: #{name.split.map(&:capitalize).join(' ')}
+Race: #{plr_race.capitalize}
+Class: #{plr_class.capitalize}
+Background: #{plr_background.capitalize}
+
+-------------------
+Stats:
+Strength: #{@strength}, Dexterity: #{@dexterity}, Constitution: #{@constitution}, Intelligence: #{@intelligence}, Wisdom: #{@wisdom}, Charisma: #{@charisma}.
+Stat Bonuses:
+STR: #{strbonus}, DEX: #{dexbonus}, CON: #{conbonus}, INT: #{intbonus}, WIS: #{wisbonus}, CHA: #{chabonus}
+Hit ponts: #{plr_hit}
+Base Speed: #{@speed}
+AC: #{armorclass}
+Passive Wisdom: #{passivewisdom}
+Melee Bonus: #{meleebonus}
+Ranged Bonus: #{rangedbonus}
+Starting gold: #{@gold.reduce(:+)}
+
+-------------------
+Skill Bonuses:
+Acrobatics: #{acrobatics} 
+Animal Handling: #{animalhandling}
+Arcana #{arcana}
+Athletics: #{athletics}
+Deception: #{deception}
+History: #{history}
+Insight: #{insight}
+Intimidation #{intimidation}
+Investigation #{investigation}
+Medicine: #{medicine}
+Nature: #{nature}
+Perception: #{perception}
+Performance: #{performance}
+Persuasion: #{persuasion}
+Religion: #{religion}
+Sleight of Hand: #{sleightofhand}
+Stealth: #{stealth}
+Survival: #{survival}
+
+-------------------
+Racial Features:
+#{race_feat}
+
+-------------------
+Class Features:")
+puts "Output saved to: characters/#{name.split.map(&:capitalize).join(' ')}-#{plr_class.capitalize}.txt"
