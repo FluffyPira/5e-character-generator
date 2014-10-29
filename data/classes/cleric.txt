@@ -43,4 +43,29 @@ Spellcasting Focus
 You can use a holy symbol (found in chapter 5) as a spellcasting focus for your cleric spells.
 
 ** see handbook for divine domain (pg. 58) **
-** see handbook for spells and cantrips **
+
+Cleric - Cantrips:
+Guidance (p248)
+Light (p253)
+Mending (p259)
+Resistance (p272)
+Sacred Flame (p272)
+Spare the Dying (p277)
+Thaumaturgy (p282)
+
+Cleric - 1st level:
+Bane (p216)
+Bless (p219)
+Command (p223)
+Create or Destroy Water (p229)
+Cure Wounds (p230)
+Detect Evil and Good (p231)
+Detect Magic (p231)
+Detect Poison and Disease (p231)
+Guiding Bolt (p248)
+Healing Word (p250)
+Inflict Wounds (p253)
+Protection from Evil and Good (p270)
+Purify Food and Drink (p270)
+Sanctuary (p272)
+Shield of Faith (p275)

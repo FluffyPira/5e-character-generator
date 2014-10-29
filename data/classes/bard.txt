@@ -44,4 +44,39 @@ Spellcasting Focus:
 You can use a musical instrument (found in chapter 5) as a spellcasting focus for your bard spells.
 
 ** see handbook for bardic inspiration (pg. 53 - 54) **
-** see handbook for spells and cantrips **
+
+Bard - Cantrips:
+Blade Ward (p218)
+Dancing Lights (p230)
+Friends (p244)
+Light (p253)
+Mage Hand (p256)
+Mending (p259)
+Message (p259)
+Minor Illusion (p260)
+Prestidigitation (p267)
+True Strike (p284)
+Vicious Mockery(p285)
+
+Bard - First Level:
+Animal Friendship (p212)
+Bane (p216)
+Charm Person (p221)
+Comprehend Languages (p224)
+Cure Wounds (p230)
+Detect Magic (p231)
+Disguise Self (p232)
+Dissonant Whispers (p233)
+Faerie Fire (p239)
+Feather Fall (p239)
+Healing Word (p250)
+Heroism (p250)
+Identify (p252)
+Illusory Script (p252)
+Longstrider (p256)
+Silent Image (p276)
+Sleep (p276)
+Speak with Animals (p277)
+Tasha’s Hideous Laughter (p280)
+Thunderwave (p283)
+Unseen Servant (p284)

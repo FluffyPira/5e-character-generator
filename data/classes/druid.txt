@@ -43,4 +43,30 @@ You can cast a druid spell as a ritual if that spell has the ritual tag and you 
 Spellcasting Focus
 You can use a druidic focus (found in chapter 5) as a spellcasting focus for your druid spells.
 
-** see handbook for spells and cantrips **
+Druid - Cantrips:
+Druidcraft (p236)
+Guidance (p248)
+Mending (p259)
+Poison Spray (p266)
+Produce Flame (p269)
+Resistance (p272)
+Shillelagh (p275)
+Thorn Whip (p282)
+
+Druid - 1st level:
+Animal Friendship (p212)
+Charm Person (p221)
+Create or Destroy Water (p229)
+Cure Wounds (p230)
+Detect Magic (p231)
+Detect Poison and Disease (p231)
+Entangle (p238)
+Faerie Fire (p239)
+Fog Cloud (p243)
+Goodberry (p246)
+Healing Word (p250)
+Jump (p254)
+Longstrider (p256)
+Purify Food and Drink (p270)
+Speak with Animals (p277)
+Thunderwave (p283)

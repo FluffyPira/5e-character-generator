@@ -40,3 +40,27 @@ Spell attack modifier = your proficiency bonus + your Charisma modifier
 
 Spellcasting Focus
 You can use an arcane focus (found in chapter 5) as a spellcasting focus for your warlock spells.
+
+Warlock - Cantrips:
+Blade Ward (p218)
+Chill Touch (p221)
+Eldritch Blast (p237)
+Friends (p244)
+Mage Hand (p256)
+Minor Illusion (p260)
+Poison Spray (p266)
+Prestidigitation (p267)
+True Strike (p284)
+
+Warlock - 1st level:
+Armor of Agathys (p215)
+Arms of Hadar (p215)
+Charm Person (p221)
+Comprehend Languages (p224)
+Expeditious Retreat (p238)
+Hellish Rebuke (p250)
+Hex (p251)
+Illusory Script (p252)
+Protection from Evil and Good (p270)
+Unseen Servant (p284)
+Witch Bolt (p289)

@@ -41,4 +41,43 @@ Sorcerous Origin
 Choose a sorcerous origin, which describes the source of your innate magical power: Draconic Bloodline or Wild Magic, both detailed at the end of the class description. Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level.
 
 ** see handbook for sorcerous origins(pg. 102) **
-** see handbook for spells and cantrips **
+
+Sorcerer - Cantrips:
+Acid Splash (p211)
+Blade Ward (p218)
+Chill Touch (p221)
+Dancing Lights (p230)
+Fire Bolt (p242)
+Friends (p244)
+Light(p253)
+Mage Hand (p256)
+Mending (p259)
+Message (p259)
+Minor Illusion (p260) 
+Poison Spray (p266)
+Prestidigitation (p267) 
+Ray of Frost (p271)
+Shocking Grasp (p275)
+True Strike (p284)
+
+Sorcerer - 1st level:
+Burning Hands (p220)
+Charm Person (p221)
+Chromatic Orb (p221)
+Color Spray (p222)
+Comprehend Languages (p224)
+Detect Magic (p231)
+Disguise Self (p232)
+Expeditious Retreat (p238)
+False Life (p239)
+Feather Fall (p239)
+Fog Cloud (p243)
+Jump (p254)
+Mage Armor (p256)
+Magic Missile (p257)
+Ray of Sickness (p271)
+Shield (p275)
+Silent Image (p276)
+Sleep (p276)
+Thunderwave (p283)
+Witch Bolt (p289)
