@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-RACES = ['dwarf', 'elf', 'halfling', 'human', 'dragonborn', 'gnome', 'half-elf', 'half-orc', 'tiefling']
+RACES = ['dwarf', 'elf', 'halfling', 'human', 'dragonborn', 'gnome', 'half-elf', 'half-orc', 'tiefling', 'nekomimi']
 CLASSES = ['barbarian', 'bard', 'cleric', 'druid', 'fighter', 'monk', 'paladin', 'ranger', 'rogue', 'sorcerer', 'warlock', 'wizard']
 BACKGROUND = ['acolyte', 'charlatan', 'criminal', 'entertainer', 'folk-hero', 'guild-artisan', 'hermit', 'noble', 'outlander', 'sage', 'sailor', 'soldier', 'urchin']
 
@@ -126,6 +126,9 @@ def raceability(race)
     @strength += 2
     @constitution +=1
     @speed = 30
+  elsif race == 'nekomimi'
+    @dexterity += 2
+    @speed = 35
   else
     @intelligence += 1
     @charisma += 2
@@ -287,6 +290,8 @@ rangedbonus = dexbonus + 2
 armorclass = 10 + dexbonus
 
 passivewisdom = 10 + perception
+
+stealth += 1 if plr_race == "nekomimi"
 
 plr_hit = hitpoints(plr_class,conbonus)
 backgroundstuff(plr_background)
