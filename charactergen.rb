@@ -256,7 +256,27 @@ plr_race = raceprompt
 plr_class = classprompt
 plr_background = backgroundprompt
 playerrolls = roll(6)
-puts "Your rolls are #{playerrolls}"
+rerolls = 2
+
+loop do
+  unless rerolls == 0
+    puts "Your rolls are #{playerrolls}. Are you comfortable with these rolls?"
+    puts "yes, no (#{rerolls} remaining)"
+    resp = gets.chomp.downcase
+    if resp == 'yes'
+      break
+    elsif resp == 'no'
+      playerrolls = roll(6)
+      rerolls -= 1
+    else
+      puts "please enter a valid command"
+    end
+  else
+    puts "Your rolls are #{playerrolls}."
+    break
+  end
+end
+    
 @strength = prompt(playerrolls, "@strength")
 puts "#{playerrolls}"
 @dexterity = prompt(playerrolls, "@dexterity")
