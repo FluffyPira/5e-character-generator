@@ -10,6 +10,7 @@ BACKGROUND = ['acolyte', 'charlatan', 'criminal', 'entertainer', 'folk-hero', 'g
 @wisdom = nil
 @charisma = nil
 @gold = nil
+@armorclass = nil
 
 
 def roll_once
@@ -179,39 +180,51 @@ def hitpoints(job,conbonus)
   
   if job == 'barbarian'
     hp = 12 + conbonus
+    @armorclass = 10 + (@dexterity + @constitution - 20) /2
     @gold = 2.times.map { rand(1..4) * 10 }
   elsif job == 'bard'
     hp = 8 + conbonus
+    @armorclass = 10 + (@dexterity - 10) / 2
     @gold = 5.times.map { rand(1..4) * 10 }
   elsif job == 'cleric'
     hp = 8 + conbonus
+    @armorclass = 10 + (@dexterity - 10) / 2
     @gold = 5.times.map { rand(1..4) * 10 }
   elsif job == 'druid'
     hp = 8 + conbonus
+    @armorclass = 10 + (@dexterity - 10) / 2
     @gold = 2.times.map { rand(1..4) * 10 }
   elsif job == 'fighter'
     hp = 10 + conbonus
+    @armorclass = 10 + (@dexterity - 10) / 2
     @gold = 5.times.map { rand(1..4) * 10 }
   elsif job == 'monk'
     hp = 8 + conbonus
+    @armorclass = 10 + (@dexterity + @wisdom - 20) / 2
     @gold = 5.times.map { rand(1..4) }
   elsif job == 'paladin'
     hp = 10 + conbonus
+    @armorclass = 10 + (@dexterity - 10) / 2
     @gold = 5.times.map { rand(1..4) * 10 }
   elsif job == 'ranger'
     hp = 10 + conbonus
+    @armorclass = 10 + (@dexterity - 10) / 2
     @gold = 5.times.map { rand(1..4) * 10 }
   elsif job == 'rogue'
     hp = 8 + conbonus
+    @armorclass = 10 + (@dexterity - 10) / 2
     @gold = 4.times.map { rand(1..4) * 10 }
   elsif job == 'sorcerer'
     hp = 6 + conbonus
+    @armorclass = 10 + (@dexterity - 10) / 2
     @gold = 3.times.map { rand(1..4) * 10 }
   elsif job == 'warlock'
     hp = 8 + conbonus
+    @armorclass = 10 + (@dexterity - 10) / 2
     @gold = 4.times.map { rand(1..4) * 10 }
   else
     hp = 6 + conbonus
+    @armorclass = 10 + (@dexterity - 10) / 2
     @gold = 4.times.map { rand(1..4) * 10 }
   end
   hp
@@ -287,8 +300,6 @@ persuasion = chabonus
 meleebonus = strbonus + 2
 rangedbonus = dexbonus + 2
 
-armorclass = 10 + dexbonus
-
 passivewisdom = 10 + perception
 
 stealth += 1 if plr_race == "nekomimi"
@@ -315,7 +326,7 @@ Stat Bonuses:
 STR: #{strbonus}, DEX: #{dexbonus}, CON: #{conbonus}, INT: #{intbonus}, WIS: #{wisbonus}, CHA: #{chabonus}
 Hit ponts: #{plr_hit}
 Base Speed: #{@speed}
-AC: #{armorclass}
+AC: #{@armorclass}
 Passive Wisdom: #{passivewisdom}
 Melee Bonus: #{meleebonus}
 Ranged Bonus: #{rangedbonus}
