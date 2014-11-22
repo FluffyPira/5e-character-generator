@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 RACES = ['dwarf', 'elf', 'halfling', 'human', 'dragonborn', 'gnome', 'half-elf', 'half-orc', 'tiefling', 'nekomimi']
 CLASSES = ['barbarian', 'bard', 'cleric', 'druid', 'fighter', 'monk', 'paladin', 'ranger', 'rogue', 'sorcerer', 'warlock', 'wizard']
-BACKGROUND = ['acolyte', 'charlatan', 'criminal', 'entertainer', 'folk-hero', 'guild-artisan', 'hermit', 'noble', 'outlander', 'sage', 'sailor', 'soldier', 'urchin']
+BACKGROUND = ['acolyte', 'charlatan', 'criminal', 'entertainer', 'folk-hero', 'guild-artisan', 'hermit', 'noble', 'outlander', 'prostitute', 'sage', 'sailor', 'slave', 'soldier', 'urchin']
 
 @strength = nil
 @dexterity = nil
@@ -245,6 +245,8 @@ def backgroundstuff(bg)
     @gold.push(10)
   elsif bg == 'urchin'
     @gold.push(10)
+  elsif bg == 'slave'
+    @gold.push(1)
   else
     @gold.push(15)
   end
